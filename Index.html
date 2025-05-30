@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armel Venegda | Python Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Armel Venegda</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://github.com/varmeljonathan" target="_blank">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/armel-venegda" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </nav>
+                <button id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Python Developer & Software Engineer</h2>
+                    <p>Building innovative applications with clean, efficient code</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn">View Projects</a>
+                        <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="profile.jpg" alt="Armel Venegda" id="profile-pic" onerror="this.src='https://via.placeholder.com/400x400?text=AV'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="game">Games</button>
+                <button class="filter-btn" data-filter="simulation">Simulations</button>
+                <button class="filter-btn" data-filter="tool">Tools</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="game">
+                    <div class="project-number">
+                        <span>PROJECT</span>
+                        <span class="number">1</span>
+                        <span class="project-tag">Text Adventure</span>
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Text Adventure Game</h3>
+                        <p>Interactive text-based adventure with multiple rooms, inventory management, and branching narratives.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>CLI</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn small-btn modal-trigger" data-modal="project1">View Details</button>
+                            <a href="https://github.com/varmeljonathan/Projects/blob/main/Text%20Adventure.py" class="btn small-btn github-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="tool">
+                    <div class="project-number">
+                        <span>PROJECT</span>
+                        <span class="number">2</span>
+                        <span class="project-tag">Golf Measurement</span>
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Golf Measurement Tool</h3>
+                        <p>A tool for measuring golf swing metrics and providing analysis.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn small-btn modal-trigger" data-modal="project2">View Details</button>
+                            <a href="https://github.com/varmeljonathan/Projects" class="btn small-btn github-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="game">
+                    <div class="project-number">
+                        <span>PROJECT</span>
+                        <span class="number">3</span>
+                        <span class="project-tag">Pokemon Tournament</span>
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Pokemon Tournament</h3>
+                        <p>An interactive game simulating Pokemon battles with type effectiveness and tournament progression.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OOP</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn small-btn modal-trigger" data-modal="project3">View Details</button>
+                            <a href="https://github.com/varmeljonathan/Projects/blob/main/pokemon.py" class="btn small-btn github-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="simulation">
+                    <div class="project-number">
+                        <span>PROJECT</span>
+                        <span class="number">4</span>
+                        <span class="project-tag">TermiTerrain</span>
+                    </div>
+                    <div class="project-overlay">
+                        <h3>TermiTerrain Generator</h3>
+                        <p>A procedural terrain generator that creates colorful landscapes in the terminal.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn small-btn modal-trigger" data-modal="project4">View Details</button>
+                            <a href="https://github.com/varmeljonathan/Projects/blob/main/TermiTerrain.py" class="btn small-btn github-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="simulation">
+                    <div class="project-number">
+                        <span>PROJECT</span>
+                        <span class="number">5</span>
+                        <span class="project-tag">StarCity</span>
+                    </div>
+                    <div class="project-overlay">
+                        <h3>StarCity Simulator</h3>
+                        <p>A city-building simulation with different building types and natural disasters.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn small-btn modal-trigger" data-modal="project5">View Details</button>
+                            <a href="https://github.com/varmeljonathan/Projects/blob/main/StarCity.py" class="btn small-btn github-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-category="simulation">
+                    <div class="project-number">
+                        <span>PROJECT</span>
+                        <span class="number">6</span>
+                        <span class="project-tag">Marble Infection</span>
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Marble Infection</h3>
+                        <p>Visual physics simulation where marbles move and "infect" each other upon collision.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn small-btn modal-trigger" data-modal="project6">View Details</button>
+                            <a href="https://github.com/varmeljonathan/Projects/blob/main/Marble%20Infection.py" class="btn small-btn github-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a senior pursuing a Bachelor of Science in Computer Science, where I'm honing my skills in software development, cloud computing, and data structures. With a passion for creating and a love for continuous learning, I'm dedicated to building innovative solutions that make a difference.</p>
+                    
+                    <p>My background includes experience in software development, where I've worked on projects ranging from web development to game programming. I am particularly interested in leveraging my skills to develop user-friendly applications and systems that solve real-world problems.</p>
+                    
+                    <p>Currently, I am working on several personal projects to expand my portfolio, including a rocket launch simulation game, a golf swing measurement tool, and a mind-reading game. Each project allows me to apply and refine my programming skills in Java, Python, and other technologies.</p>
+                    
+                    <p>My goal is to complete my degree and transition into a full-time software engineering role, where I can continue to grow and contribute to meaningful projects. I am eager to apply my knowledge and skills in a professional setting, working with a team to develop innovative software solutions.</p>
+                    
+                    <div class="github-section">
+                        <h3><i class="fab fa-github"></i> GitHub Contributions</h3>
+                        <p>Check out my open-source projects and contributions on GitHub. I regularly update my repositories with new Python projects and code samples.</p>
+                        <a href="https://github.com/varmeljonathan" class="btn secondary-btn" target="_blank">
+                            <i class="fab fa-github"></i> View GitHub Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h4>Programming Languages</h4>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span>Python</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Java</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>JavaScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>SQL</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>HTML/CSS</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Frameworks & Libraries</h4>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span>NumPy</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Tkinter</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Pandas</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Flask</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Tools & Technologies</h4>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span>Git & GitHub</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>VS Code</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Docker</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Other Skills</h4>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span>Data Structures & Algorithms</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Database Management</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Game Development</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Cloud Computing</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Agile Methodology</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:varmeljonathan@yahoo.com">varmeljonathan@yahoo.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>San Antonio, Texas</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/varmeljonathan" target="_blank">github.com/varmeljonathan</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://linkedin.com/in/armel-venegda" target="_blank">linkedin.com/in/armel-venegda</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Armel Venegda. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/varmeljonathan" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/armel-venegda" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <!-- Project 1 Modal: Text Adventure -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Text Adventure Game</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="code-preview">
+                        <pre><code>def explore_mansion(grade, backpack):
+    print("You find yourself in a spooky haunted mansion.")
+    print("There are eerie sounds coming from different rooms.")
+    print("Health", grade)
+    printBackpack(backpack)
+    
+    while True:
+        command = input("What do you want to do? (explore/take/exit): ")
+        if command == "explore":
+            print("You enter a dark room and see a spooky figure.")
+            grade += 5
+            break
+        elif command == "take":
+            backpack.append("casino chips")
+            print("You took some casino chips but you hurt your finger")
+            grade -= 5
+            print(grade)
+        elif command == "exit":
+            sys.exit()
+        else:
+            print("Invalid command. Please try again.")
+    return grade</code></pre>
+                    </div>
+                </div>
+                <div class="modal-description">
+                    <p>An interactive text-based adventure game with multiple rooms, inventory management, and branching narratives. Features include health tracking, age verification, and ASCII art banners.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Multiple rooms to explore: mansion, tunnel, and casino</li>
+                        <li>Inventory system to collect and use items</li>
+                        <li>Health tracking system</li>
+                        <li>Multiple endings based on player choices</li>
+                        <li>ASCII art for visual appeal</li>
+                    </ul>
+                    <div class="modal-tech">
+                        <span>Python</span>
+                        <span>CLI</span>
+                        <span>Game Development</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/varmeljonathan/Projects/blob/main/Text%20Adventure.py" class="btn secondary-btn" target="_blank">
+                    <i class="fab fa-github"></i> View Code on GitHub
+                </a>
+                <a href="#" class="btn primary-btn">
+                    <i class="fas fa-play"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Modal: Golf Measurement -->
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Golf Measurement Tool</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="code-preview">
+                        <pre><code>class GolfSwingAnalyzer:
+    def __init__(self):
+        self.swings = []
+        self.metrics = {
+            'speed': [],
+            'angle': [],
+            'accuracy': []
+        }
+    
+    def record_swing(self, speed, angle, accuracy):
+        self.swings.append({
+            'speed': speed,
+            'angle': angle,
+            'accuracy': accuracy,
+            'timestamp': time.time()
+        })
+        self.metrics['speed'].append(speed)
+        self.metrics['angle'].append(angle)
+        self.metrics['accuracy'].append(accuracy)
+        
+    def get_average_metrics(self):
+        return {
+            'avg_speed': sum(self.metrics['speed']) / len(self.metrics['speed']),
+            'avg_angle': sum(self.metrics['angle']) / len(self.metrics['angle']),
+            'avg_accuracy': sum(self.metrics['accuracy']) / len(self.metrics['accuracy'])
+        }</code></pre>
+                    </div>
+                </div>
+                <div class="modal-description">
+                    <p>A tool for measuring golf swing metrics and providing analysis. Tracks swing speed, angle, and accuracy to help golfers improve their technique.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Record and analyze golf swing data</li>
+                        <li>Calculate average metrics across multiple swings</li>
+                        <li>Track improvement over time</li>
+                        <li>Provide recommendations based on metrics</li>
+                    </ul>
+                    <div class="modal-tech">
+                        <span>Python</span>
+                        <span>Data Analysis</span>
+                        <span>Sports Analytics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/varmeljonathan/Projects" class="btn secondary-btn" target="_blank">
+                    <i class="fab fa-github"></i> GitHub Repository
+                </a>
+                <a href="#" class="btn primary-btn">
+                    <i class="fas fa-play"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 Modal: Pokemon Tournament -->
+    <div id="project3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Pokemon Tournament</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="code-preview">
+                        <pre><code>class Pokemon:
+    def __init__(self, name, element):
+        self.name = name
+        self.element = element
+        self.in_tourny = True
+        self.skill = random.randint(0, 100)
+        self.money = random.randint(1, 50)
+    
+    def battle(self, opponent):
+        element_chart = [
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0, 1, 1, 0.5, 1],
+            # More type effectiveness data...
+        ]
+        
+        attacker_index = self.element_to_index()
+        defender_index = opponent.element_to_index()
+        
+        advantage = element_chart[attacker_index][defender_index]
+        return advantage</code></pre>
+                    </div>
+                </div>
+                <div class="modal-description">
+                    <p>A Pokemon battle simulator featuring type effectiveness, random skills, and tournament progression. Players select Pokemon to battle against each other in a tournament format.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Pokemon battle system with type effectiveness</li>
+                        <li>Tournament progression</li>
+                        <li>Random skill and money attributes</li>
+                        <li>Interactive player selection</li>
+                    </ul>
+                    <div class="modal-tech">
+                        <span>Python</span>
+                        <span>OOP</span>
+                        <span>Game Development</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/varmeljonathan/Projects/blob/main/pokemon.py" class="btn secondary-btn" target="_blank">
+                    <i class="fab fa-github"></i> View Code on GitHub
+                </a>
+                <a href="#" class="btn primary-btn">
+                    <i class="fas fa-play"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 4 Modal: TermiTerrain -->
+    <div id="project4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>TermiTerrain Generator</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="code-preview">
+                        <pre><code>def print_map():
+    for i in range(size):
+        for j in range(size):
+            if map[i][j] < 25:
+                print(water_color, "~", end="")
+            elif map[i][j] < 50:
+                print(beach_color, "^", end="")
+            elif map[i][j] < 75:
+                print(grass_color, "*", end="")
+            else:
+                print(snow_color, "#", end="")
+        print("\033[0m")
+
+def algorithm(depth, Top_L, Top_R, Bottom_L, Bottom_R):
+    magnitude = args.magnitude * (2 ** depth)
+    offset = random.randint(-magnitude, magnitude)
+    
+    middle_x = int((Top_L[0] + Top_R[0] + Bottom_L[0] + Bottom_R[0]) // 4)
+    middle_y = int((Top_L[1] + Top_R[1] + Bottom_L[1] + Bottom_R[1]) // 4)</code></pre>
+                    </div>
+                </div>
+                <div class="modal-description">
+                    <p>A procedural terrain generator that creates colorful landscapes in the terminal using the diamond-square algorithm. It visualizes terrain with water, beaches, grasslands, and snowy mountains.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Diamond-square algorithm for realistic terrain generation</li>
+                        <li>Color-coded visualization in the terminal</li>
+                        <li>Configurable terrain parameters</li>
+                        <li>Multiple terrain types (water, beach, grass, snow)</li>
+                    </ul>
+                    <div class="modal-tech">
+                        <span>Python</span>
+                        <span>NumPy</span>
+                        <span>Procedural Generation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/varmeljonathan/Projects/blob/main/TermiTerrain.py" class="btn secondary-btn" target="_blank">
+                    <i class="fab fa-github"></i> View Code on GitHub
+                </a>
+                <a href="#" class="btn primary-btn">
+                    <i class="fas fa-play"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 5 Modal: StarCity -->
+    <div id="project5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>StarCity Simulator</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="code-preview">
+                        <pre><code>def build_building(city, row, col, building_type):
+    if building_type == 'house':
+        if row + 1 < size and col + 1 < size:
+            city[row][col] = 'H'
+            city[row+1][col] = 'H'
+            city[row][col+1] = 'H'
+            city[row+1][col+1] = 'H'
+    elif building_type == 'street':
+        if col + 4 < size:
+            city[row][col:col+5] = ['S']*5
+    elif building_type == 'river':
+        if row + 2 < size:
+            city[row][col] = 'R'
+            city[row+1][col] = 'R'
+            city[row+2][col] = 'R'</code></pre>
+                    </div>
+                </div>
+                <div class="modal-description">
+                    <p>A city-building simulation with different building types, natural disasters, and an interactive grid-based interface. Users can build houses, streets, and rivers to create their own urban landscape.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Multiple building types (houses, streets, rivers)</li>
+                        <li>Interactive grid-based interface</li>
+                        <li>Natural disaster simulation</li>
+                        <li>Turn-based gameplay</li>
+                    </ul>
+                    <div class="modal-tech">
+                        <span>Python</span>
+                        <span>NumPy</span>
+                        <span>Simulation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/varmeljonathan/Projects/blob/main/StarCity.py" class="btn secondary-btn" target="_blank">
+                    <i class="fab fa-github"></i> View Code on GitHub
+                </a>
+                <a href="#" class="btn primary-btn">
+                    <i class="fas fa-play"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 6 Modal: Marble Infection -->
+    <div id="project6" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Marble Infection</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="code-preview">
+                        <pre><code>class Marble:
+    def __init__(self, x, y, color, stuck):
+        self.position_x = x
+        self.position_y = y
+        flag = random.randint(0,1)
+        if flag == 0:
+            self.velocity_x = random.randint(-5, -3)
+            self.velocity_y = random.randint(-5, -3)
+        else:
+            self.velocity_x = random.randint(3, 5)
+            self.velocity_y = random.randint(3, 5)
+        self.color = color
+        self.stuck = stuck
+    
+    def check_collision(self, other):
+        if 20.0 >= math.sqrt((self.position_x - other.position_x)**2 + 
+                            (self.position_y - other.position_y)**2):
+            other.stuck = True
+            other.color = (255,0,0)</code></pre>
+                    </div>
+                </div>
+                <div class="modal-description">
+                    <p>A visual physics simulation where marbles move around and "infect" each other upon collision. The simulation demonstrates concepts like velocity-based movement, collision detection, and color-changing effects.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Physics-based marble movement</li>
+                        <li>Collision detection system</li>
+                        <li>Visual infection spreading mechanism</li>
+                        <li>Dynamic color changes based on infection state</li>
+                    </ul>
+                    <div class="modal-tech">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>Physics Simulation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/varmeljonathan/Projects/blob/main/Marble%20Infection.py" class="btn secondary-btn" target="_blank">
+                    <i class="fab fa-github"></i> View Code on GitHub
+                </a>
+                <a href="#" class="btn primary-btn">
+                    <i class="fas fa-play"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+    // Inline modal fix - direct implementation without relying on external files
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Modal fix script loaded');
+        
+        // Add click event listeners directly to project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const modalTrigger = this.querySelector('.modal-trigger');
+                if (modalTrigger) {
+                    const modalId = modalTrigger.getAttribute('data-modal');
+                    const modal = document.getElementById(modalId);
+                    if (modal) {
+                        modal.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
+                        console.log('Modal opened via card click:', modalId);
+                    }
+                }
+            });
+        });
+        
+        // Modal trigger buttons
+        document.querySelectorAll('.modal-trigger').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent triggering the card click
+                const modalId = this.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                    console.log('Modal opened via button click:', modalId);
+                }
+            });
+        });
+        
+        // Close buttons
+        document.querySelectorAll('.close-modal').forEach(closeBtn => {
+            closeBtn.addEventListener('click', function() {
+                const modal = this.closest('.modal');
+                if (modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    console.log('Modal closed via close button:', modal.id);
+                }
+            });
+        });
+        
+        // Close on outside click
+        window.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                console.log('Modal closed via outside click');
+            }
+        });
+        
+        // Define global functions for direct access
+        window.openModal = function(modalId) {
+            console.log('Manual open modal called for:', modalId);
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        };
+        
+        window.closeModal = function(modalId) {
+            console.log('Manual close modal called for:', modalId);
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        };
+    });
+    </script>
+</body>
+</html>
